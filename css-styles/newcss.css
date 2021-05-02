@@ -1,0 +1,453 @@
+@charset "utf-8";
+/*
+
+    Title: newcss.css
+    Author: Chua Teck Hua Jackie P1950052
+    Class: DISM/FT/1A/01
+    Assignment: CA2
+    Purpose: CSS styles (additional styling)
+
+*/
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------
+
+html
+--------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*Behaviour*/
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Index.html
+--------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*Slideshow*/
+.imageSlide {
+    width: 100%;
+}
+
+.mySlides {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 0ms, opacity 500ms 0ms;
+}
+
+.showing {
+    height: auto;
+    opacity: 1;
+    transition: height 0ms 0ms, opacity 500ms 0ms;
+}
+
+    /*Navigation buttons*/
+    .prevSlide, .nextSlide {
+        cursor: pointer;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 0 100px 100px 0;   
+        user-select: none;
+    }
+
+    /*on hover, highlights the navigation button*/
+    .prevSlide:hover, .nextSlide:hover {
+        background-color: rgb(27, 30, 207);
+    }
+
+    /*Position the next button to the right*/
+    .nextSlide {
+        right: 0.5%;
+        border-radius: 100px 0 0 100px;
+    }
+
+    /*dots indicator*/
+    .dot {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        margin: 0 2px;
+        border-radius: 50%;
+        background-color: rgb(22, 0, 221);
+        transition: background-color 0.6s ease;
+    }
+
+    .pauseSlide {
+        cursor: pointer;
+    }
+
+    .active, .dot:hover {
+        background: #FF0000;
+    }
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Contact Us.html
+--------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*Text over Image*/
+#contactTitle {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+#test2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------
+
+latest-technology.html
+--------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*Text over Image*/
+#latesttechnologyTitle {
+    position: absolute;
+    top: 20%;
+    left:10%;
+}
+
+.mainmenucaption {
+    font-size: 35px;
+
+}
+
+#navbackarrow{
+    bottom: 5%;
+    left: 1%;   
+    z-index: 2;
+    border-radius: 50%;
+
+}
+
+#navbackarrow:hover{
+    border-radius: 10%;
+    background-color:#FF0000;
+    transition: border-radius 1s;
+}
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Media Query (Additional Setting)
+--------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/*Text scalling, Size scalling*/
+@media (max-width: 992px) {  
+    #contactTitle, #formTitle {
+        font-size: 45px;
+        
+    }
+
+    #accordiongeneral button, #accordionpayment button, #accordiondelivery button {
+        font-size: 20px;
+    }
+
+    #aboutTitle {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /*Slide caption*/
+    .slideText {
+        font-weight: bold;
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+    
+
+}
+
+@media (min-width: 992px) {
+
+    #latesttechnologymenu {
+        height: 669px;
+    }
+}
+
+@media (min-width: 768px) {
+    #aboutTitle {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: start;
+        padding-left: 50px;
+    }
+    #latesttechnologymenu {
+        height: 663px;
+    }
+
+    /*Slide caption*/
+    .slideText {
+        position: absolute;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: start;
+        padding: 8px 12px;
+        top: 30%;
+        left: 8%;
+    }
+
+    .dotsNavigation {
+        text-align: center;
+        position: absolute;
+        left: 2%;
+        bottom: 5%;
+    }
+
+}
+
+
+@media (max-width: 576px) {  
+    #contactTitle, #formTitle, #contactTitle2 {
+        font-size: 35px;
+    }
+
+    #latesttechnologyTitle2, #indextitle {
+        font-size: 50px;
+    }
+
+}
+
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------
+Animations
+--------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*Slideshow animation*/
+
+
+/*When hovering over an object*/
+.hovermenucontainer {
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+.hovermenucontainer:hover {
+    border-color: #06A8FF;
+}
+
+.hovermenuimg {
+    overflow: hidden;
+}
+
+.hovermenuimg img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.hovermenuimg:hover img {
+   opacity: 0.9;
+   transform: scale(1.1);
+}
+
+/*When hovering over an object (ver.2 for shop.html)*/
+.hovermenuimg2 {
+    transition: transform 0.5s ease-in-out;
+}
+
+.hovermenuimg2:hover .hovermenucontainer img{
+    opacity: 0.9;
+    transform: scale(1.1); 
+}
+
+.hovermenucontainer2 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ffffff;
+}
+
+.hovermenucontainer2:hover{
+    border-color: #06A8FF;
+    border-width: 5px;
+    cursor: pointer;
+
+}
+
+/*Animated Social Media Button*/
+.btn {
+    clear:both;
+    white-space:nowrap;
+    font-size:.8em;
+    display:inline-block;
+    border-radius:5px;
+    margin:2px;
+        transition:all .5s;
+    overflow:hidden
+  }
+    
+  .btn:focus {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .btn > span,.btn-icon > i {
+    float:left;
+    padding:13px;
+    transition:all .5s;
+    line-height:1em
+  }
+  
+  .btn > span {
+    padding:14px 18px 16px;
+    white-space:nowrap;
+    color:#FFF;
+    background:#b8b8b8
+  }
+  
+  .btn:focus > span {
+    background:#9a9a9a
+  }
+  
+  .btn-icon > i {
+    border-radius:5px 0 0 5px;
+    position:relative;
+    width:13px;
+    text-align:center;
+    font-size:1.25em;
+    color:#fff;
+    background:#212121;
+  }
+  
+  .btn-icon > i:after {
+    content:"";
+    border:8px solid;
+    border-color:transparent transparent transparent #222;
+    position:absolute;
+    top:13px;
+    right:-15px
+  }
+  
+  .btn-icon:hover > i,.btn-icon:focus > i {
+    color:#FFF
+  }
+  
+  .btn-icon > span {
+    border-radius:0 5px 5px 0
+  }
+  
+  /*Facebook*/
+  .btn-facebook:hover > i,.btn-facebook:focus > i {
+    color:#3b5998
+  }
+  
+  .btn-facebook > span {
+    background:#3b5998
+  }
+  
+  /*Twitter*/
+  .btn-twitter:hover > i,.btn-twitter:focus > i {
+    color:#55acee
+  }
+  
+  .btn-twitter > span {
+    background:#55acee
+  }
+  
+  /*Google*/
+  .btn-googleplus:hover > i,.btn-googleplus:focus > i {
+    color:#dd4b39
+  }
+  
+  .btn-googleplus > span {
+    background:#dd4b39
+  }
+  
+  /*Pinterest*/
+  .btn-pinterest:hover > i,.btn-pinterest:focus > i {
+    color:#cb2028
+  }
+  
+  .btn-pinterest > span {
+    background:#cb2028
+  }
+  
+  /*LinkedIn*/
+  .btn-linkedin:hover > i,.btn-linkedin:focus > i {
+    color:#007bb6
+  }
+  
+  .btn-linkedin > span {
+    background:#007bb6
+  }
+
+/*Animated Underline*/
+#underlineAbout {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    animation: animateUnderline 2s;
+}
+
+#underlineAbout:hover {
+    background-size: 100% 2px;
+    transition: background-size 0.5s;
+}
+
+@keyframes animateUnderline {
+    0% {
+        background-size: 0% 2px;
+    }
+
+    50% {
+        background-size: 100% 2px;
+    }
+}
+
+/*Animated Arrow-down*/
+#arrow, #arrow1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#arrow span, #arrow1 span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-bottom: 10px solid #06A8FF;
+    border-right: 10px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+#arrow span:nth-child(2), #arrow1 span:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+#arrow span:nth-child(3), #arrow1 span:nth-child(3){
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}

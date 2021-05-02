@@ -1,0 +1,348 @@
+<!--
+
+    Assignment: CA2
+    Purpose: Home Page
+
+-->
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>Jackerton | Latest PC & Sky-High Discounts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css-styles/newcss.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainnavbar">
+                <a class="navbar-brand" href="Index.html">
+                    <img class="d-sm-none" src="company-logo-mobile.png" alt="company-logo-mobile">
+                    <img class="d-none d-sm-block" src="company-logo.png" alt="company-logo-mobile">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="review.html">Review</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="contact-us.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="cart.html">Cart</a></li>
+                    </ul>
+                    <form class="form-inline my-2 my-md-0" action="#">
+                        <input class="form-control mr-sm-2 d-none d-block d-sm-block d-lg-none" type="search" placeholder="Search item">
+                        <button class="btn btn-outline-dark my-2 my-sm-0" data-toggle = "tooltip" title="Search Function coming soon">Search</button>
+                    </form>
+                </section>
+            </nav>
+        </header>
+        <main>
+            <!--Slideshow-->
+            <section class="px-0 container-fluid position-relative"> <!--container-->
+                <article class="bg-dark row">
+                    <div class="col-12">
+                        <!--Images & its content-->
+                        <figure class="my-0 mySlides showing">
+                            <img class="imageSlide" src="images/index/business-cellphone-communication-2764670.jpg" alt="laptopcellphone">
+                            <figcaption class="slideText text-light text-sm-center text-md-left text-lg-left w-40 col-12">
+                                <h2>
+                                    Hey folks! Teacher's Day Special
+                                </h2>
+                                <p>
+                                    Get up to <mark class="bg-warning rounded">50% Discount&#10078;</mark> for purchasing online here
+                                </p>
+                                <a href="shopping.html#discountedlaptop" class="btn btn-warning font-weight-bold">Shop Now</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="mySlides my-0">
+                            <img class="imageSlide" src="images/index/bear-connection-dark-461497.jpg" alt="beardarklaptop">
+                            <figcaption class="slideText text-light text-sm-center text-md-left text-lg-left w-40 col-12">
+                                <h2>
+                                    Need Long Lasting Laptop ?
+                                </h2>
+                                <small>
+                                    You can get it from <mark class="rounded">$600</mark>
+                                </small><br>
+                                <a href="shopping.html#discountedlaptop" class="btn btn-success">Buy Now</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="mySlides my-0">
+                            <img class="imageSlide" src="images/index/dark-design-desk-777001.jpg" alt="twomonitorpc">
+                            <figcaption class="slideText text-light text-sm-center text-md-left text-lg-left w-40 col-12">
+                                <h2>
+                                    In need of fury <mark class="bg-dark text-light rounded">Power</mark> ?
+                                </h2>
+                                <small>
+                                    Choice of CPU, RAM, PSU, Soundcard,GPU.<br>
+                                    Your Choice, your power.
+                                </small><br>
+                                <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#shopnotify1">Customise Now</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="mySlides my-0">
+                            <img class="imageSlide" src="images/index/close-up-code-coding-160107.jpg" alt="computercodes">
+                            <figcaption class="slideText text-light text-sm-center text-md-left text-lg-left w-40 col-12">
+                                <h2 class="font-weight-bold text-primary">
+                                    JDOWS VI <small class="text-light"><i>&#9732;from V, then V</i></small>
+                                </h2>
+                                <small>
+                                    We lived in the world of features created by ourselves.
+                                    <br>Design your feature, design your dream.
+                                </small><br>
+                                <a href="#" class="btn btn-warning font-weight-bold" data-toggle="modal" data-target="#shopnotify1">Create Now</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="mySlides my-0">
+                            <img class="imageSlide" src="images/index/adult-competition-concentration-929831.jpg" alt="gamingpcman">
+                            <figcaption class="slideText text-light text-sm-center text-md-left text-lg-leftext-center-md w-40 col-12">
+                                <h2>
+                                <mark class="rounded">High-End</mark> Gaming Capable
+                                </h2>
+                                <p>
+                                    Bring one home to start playing
+                                </p>
+                                <a href="" class="btn btn-danger" data-toggle="modal" data-target="#shopnotify1">Get Now</a>
+                            </figcaption>
+                        </figure>
+                        <!--Previous & Next slide navigation buttons-->
+                        <span class="slideNavControl">
+                            <a class="prevSlide position-absolute text-light" id="previous" onclick="getPreviousFigure()">&#10094;</a>
+                            <a class="nextSlide position-absolute text-light" id="next" onclick="getNextFigure()">&#10095;</a>
+                        </span>
+                        <!--current slide indicator-->
+                        <article class="dotsNavigation">
+                            <span class="dot d-inline-block"></span>
+                            <span class="dot d-inline-block"></span>
+                            <span class="dot d-inline-block"></span>
+                            <span class="dot d-inline-block"></span>
+                            <span class="dot d-inline-block"></span>
+                            <span class="pauseSlide bg-info rounded px-2 d-inline-block" id="pause" onclick="getPauseFigure()">&#10074;&#10074;</span>
+                        </article>
+                    </div>
+                </article>
+            </section>
+            <!--Categories for shoppers to choose-->
+            <section class="container mt-5">
+                <h1 class="text-center display-3 mb-5" id="indextitle">
+                    I want to <mark class="bg-dark text-light rounded">Look</mark> for
+                </h1>
+                <h2 class="display-4 font-weight-normal">Computers</h2>
+                <article class="row">
+                    <a class="text-decoration-none col-12 col-sm-12 col-md-12 col-lg-12 text-center" href="shopping.html">
+                        <figure class="hovermenucontainer bg-warning">
+                            <div class="hovermenuimg">
+                                <img class="img-fluid" src="images/index/tags-solid.png" alt="microchip-solid">
+                            </div>
+                            <figcaption class="lead text-light font-weight-normal mainmenucaption">
+                                Need a guide? click me!
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article class="row">
+                    <a class="text-decoration-none col-12 col-sm-12 col-md-6 text-center" href="shopping.html#latestdesktop">
+                        <figure class="hovermenucontainer bg-primary">
+                            <div class="hovermenuimg">
+                                <img class="img-fluid" id="latesttechnologymenu" src="images/index/microchip-solid.png" alt="microchip-solid">
+                            </div>
+                            <figcaption class="lead text-light font-weight-normal mainmenucaption">
+                                Latest Technology
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <article class="col-12 col-sm-12 col-md-6">
+                        <div class="row">
+                        <a class="text-decoration-none col-12 col-sm-12 col-md-12 col-lg-12 text-center" href="shopping.html#discountedlaptop">
+                            <figure class="hovermenucontainer bg-success">
+                                <div class="hovermenuimg">
+                                    <img class="img-fluid" src="images/index/tags-solid.png" alt="microchip-solid">
+                                </div>
+                                <figcaption class="lead text-light font-weight-normal mainmenucaption">
+                                    Second-handed but Durable
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a class="text-decoration-none col-12 col-sm-12 col-md-12 col-lg-12 text-center" href="shopping.html#customlaptop">
+                            <figure class="hovermenucontainer bg-secondary">
+                                <div class="hovermenuimg">
+                                    <img class="img-fluid" src="images/index/microchip-solid.png" alt="microchip-solid">
+                                </div>
+                                <figcaption class="lead text-light font-weight-normal mainmenucaption">
+                                    Customised & Customisable
+                                </figcaption>
+                            </figure>
+                        </a>
+                        </div>
+                    </article>
+                </article>
+                <h2 class="display-4 font-weight-normal">Services</h2>
+                <a class="text-decoration-none text-center" href="shopping.html#latestlaptop">
+                    <figure class="hovermenucontainer bg-secondary">
+                        <div class="hovermenuimg">
+                            <img class="img-fluid" src="images/index/code-coding-connection-943096.jpg" alt="microchip-solid">
+                        </div>
+                        <figcaption class="lead text-light font-weight-normal mainmenucaption">
+                            Custom Operating System
+                        </figcaption>
+                    </figure>
+                </a>
+                <a class="text-decoration-none text-center" href="shopping.html#latestlaptop">
+                    <figure class="hovermenucontainer bg-secondary">
+                        <div class="hovermenuimg">
+                            <img class="img-fluid" src="images/index/adult-data-database-1181316.jpg" alt="microchip-solid">
+                        </div>
+                        <figcaption class="lead text-light text-center font-weight-normal mainmenucaption">
+                            Server Hosting
+                        </figcaption>
+                    </figure>
+                </a>    
+            </section>
+            <!--Introduction-->
+            <section class="container">
+                <h2 class="display-4">
+                    Why shop with us?
+                </h2>
+                <p>
+                   As the Technology we live in changes almost every second. 
+                   We AIM to provide Latest Models of computers out there in the world.
+                </p>
+                <p>
+                   For those in search of cheap but packed with decent quality 
+                   of speed and performance, we Offer trustworthy second-hand computers where
+                   strict inspection has been imposed before selling it out to you. 
+                </p>
+            </section>
+            <!-- Modal (HIDDEN CONTENT 1 > appears when activated modal) -->
+            <section class="modal fade" id="shopnotify1" tabindex="-1" role="dialog">
+                <article class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">
+                            <i class="fas fa-exclamation-triangle fa-2x bg-warning rounded p-2"></i> Notice
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                            <div class="modal-body" id="modalshopbody">
+                                <!-- innerHTML by modal.js-->
+                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">I got it</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <!-- Main Footer -->
+        <footer class="container-fluid bg-secondary text-center font-weight-bold">
+            <section class="row">
+                <i class="fas fa-share col-12 lead mt-4">
+                    <span> share with your friends</span>
+                </i>
+                <article class="mt-2 col-12">
+                    <a class="btn btn-primary btn-outline-dark text-light p-2 rounded" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"><span> Facebook</span></i>
+                    </a>
+                    <a class="btn btn-info btn-outline-dark text-light p-2 rounded" href="https://twitter.com/login">
+                        <i class="fab fa-twitter"><span> Twitter</span></i>
+                    </a>
+                    <a class="btn btn-light btn-outline-dark text-dark p-2 rounded" href="http://plus.google.com">
+                        <i class="fab fa-google-plus-g">
+                        <span class="text-primary"> G</span>
+                        <span class="text-danger">o</span>
+                        <span class="text-warning">o</span>
+                        <span class="text-primary">g</span>
+                        <span class="text-success">l</span>
+                        <span class="text-danger">e+</span>
+                        </i>
+                    </a>
+                    <a class="btn btn-danger btn-outline-dark text-light p-2 rounded" href="https://www.pinterest.com/login/">
+                        <i class="fab fa-pinterest"><span> Pinterest</span></i>
+                    </a>
+                    <a class="btn btn-warning btn-outline-dark text-light p-2 rounded" href="https://www.linkedin.com/uas/login?">
+                        <i class="fab fa-linkedin-in"><span> Linkedin</span></i>
+                    </a>
+                </article>
+                <article class="col-12 mt-5 ml-5">
+                    <section class="row">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-left">
+                            <i class="fas fa-rss-square d-inline"></i>
+                            <h6 class="font-weight-bold d-inline">What's new</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Intel i9</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Nvidia 2080</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Lindow Edge</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">FLAT</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Curved 3D Laptop</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-left">
+                            <i class="fas fa-user-friends d-inline"></i>
+                            <h6 class="font-weight-bold d-inline">Profile Management</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Account Profile</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Track order</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Sync Account</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-left">
+                            <i class="fas fa-user-graduate d-inline"></i>
+                            <h6 class="font-weight-bold d-inline">Education</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Laptops for Student</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Custom OS Maker</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Student benefits</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Licensing student</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-left">
+                            <i class="fas fa-building d-inline"></i>
+                            <h6 class="font-weight-bold d-inline">Company</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1"></a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">About Us</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </article>
+                <article class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto">
+                    <ul class="nav navbar list-unstyled">
+                        <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1"><i class="fas fa-language fa-1x"> Viewing in: English (UK)</i> |</a></li>
+                        <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Contact Us |</a></li>
+                        <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">About our Ads |</a></li>
+                    </ul>
+                </article>
+                <figure class="mb-0 col-12">
+                    <img src="favicon.ico" alt="favicon icon"><a class="text-decoration-none text-light" href="#">Jackerton | Latest PCs & Sky-High Discounts &#9400; 2019</a>
+                </figure>
+            </section>
+        </footer>
+        <!-- 
+
+            Bootstrap CDN
+        -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- 
+
+            Custom Icons 
+        -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!-- 
+
+            Custom Javascript
+            slideshow.js == For slideshow feature
+            showSlide(1) == Invoke slideshow to show
+            modal.js == For displaying contents of Bootstrap Modal
+        -->
+        <script src="javascript/slideshow.js"></script>
+        <script src="javascript/modal.js"></script>
+    </body>
+</html>

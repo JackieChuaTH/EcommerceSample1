@@ -1,0 +1,388 @@
+<!--
+
+    Assignment: CA2
+    Purpose: FAQ Page
+
+-->
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>Jackerton | Latest PC & Sky-High Discounts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css-styles/newcss.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainnavbar">
+                <a class="navbar-brand" href="Index.html">
+                    <img class="d-sm-none" src="company-logo-mobile.png" alt="company-logo-mobile">
+                    <img class="d-none d-sm-block" src="company-logo.png" alt="company-logo-mobile">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="review.html">Review</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="contact-us.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold mainnavlink" href="cart.html">Cart</a></li>
+                    </ul>
+                    <form class="form-inline my-2 my-md-0" action="#">
+                        <input class="form-control mr-sm-2 d-none d-block d-sm-block d-lg-none" type="search" placeholder="Search item">
+                        <button class="btn btn-outline-dark my-2 my-sm-0" data-toggle = "tooltip" title="Search Function coming soon">Search</button>
+                    </form>
+                </section>
+            </nav>
+        </header>
+        <main>
+            <section class="container">
+                <h1 class="display-3 my-5">Here are <mark class="bg-dark text-light rounded">our</mark> answers</h1>
+                <small class="text-muted lead">
+                    If you are not able to find your answers, 
+                    do <a class="font-weight-bold text-decoration-none" href="contact-us.html">
+                    <i class="fas fa-mobile-alt"></i> contact us</a>
+                </small>
+                <hr class="bg-primary">
+                <!-- Accordion 1: General questions -->
+                <h2 class="display-4 mt-5">
+                    <i class="fas fa-smile"></i> General
+                </h2>
+                <article class="accordion mb-5" id="accordiongeneral">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                    How do I change my JKT Account Password ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordiongeneral">
+                            <div class="card-body">
+                                <p>
+                                    You can change your JKT Account's password by going to your Account Profile:<br>
+                                    Account settings <i class="fas fa-angle-double-right"></i> 
+                                    Security <i class="fas fa-angle-double-right"></i> Password 
+                                    <i class="fas fa-angle-double-right"></i> Password Reset<br>
+                                </p>
+                                <ol>
+                                    <li>After Password Reset, an Email will be send to your Email used to register your JKT Account.</li>
+                                    <li>Click on the hyperlink in the Email, and key in your new password.</li>
+                                    <li>Your new JKT Account's Password will be ready to use for 5 Minutes.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                                    Where can contact if I have more enquiries ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordiongeneral">
+                            <div class="card-body">
+                                <p>
+                                    You can visit <a href="contact-us.html">Contact</a> Page to<br>
+                                </p>
+                                <ol>
+                                    <li>Send an Enquiry Ticket to us.<br><i class="fas fa-exclamation-circle"></i>Reply may take up to 2 to 3 working days.</li>
+                                    <li>Call us via hotline.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseThree">
+                                    Is there any condition for selling a second-hand computers to us ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordiongeneral">
+                            <div class="card-body">
+                                <p>
+                                    Computers must still be usable and that there are no hardware damages.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseFour">
+                                    How much would I get for selling my Computers ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-parent="#accordiongeneral">
+                            <div class="card-body">
+                                <p>
+                                    We evaluate the condition as follows:
+                                </p>
+                                <ol>
+                                    <li>Prescene of Physical damage<br><i class="fas fa-exclamation-circle"></i>Such as scratches, discoloration on the Computer etc.</li>
+                                    <li>Hardware Components and its specifications</li>
+                                    <li>Age of the Computer</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <h2 class="display-4 mt-5">
+                    <i class="fas fa-comment-dollar"></i> Payments
+                </h2>
+                <!-- Accordion 2: Payment questions -->
+                <article class="accordion mb-5" id="accordionpayment">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseOneB">
+                                    What are the available payment modes ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOneB" class="collapse show" data-parent="#accordionpayment">
+                            <div class="card-body">
+                                <p>
+                                    We accept MasterCard, Visa and American Express.
+                                </p>
+                                <p>
+                                    <i class="fab fa-cc-mastercard fa-5x bg-danger px-2 rounded"></i>
+                                    <i class="fab fa-cc-visa fa-5x bg-warning px-2 rounded"></i>
+                                    <i class="fab fa-cc-amex fa-5x bg-primary px-2 rounded"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseTwoB">
+                                    Is Goods Service Tax (GST) charged ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwoB" class="collapse" data-parent="#accordionpayment">
+                            <div class="card-body">
+                                <p>
+                                    We are GST-registered retail store. Depending on your country, the tax rate may defer.<br>
+                                    For example, Singapore's tax rate is 7%.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseThreeB">
+                                    Is it possible to make Online Payment without creating a JKT Account ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThreeB" class="collapse" data-parent="#accordionpayment">
+                            <div class="card-body">
+                                <p>
+                                    As the JKT Account are needed to track your orders and payment,<br>
+                                    you will need to create an Account first before payments can be made.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <h2 class="display-4 mt-5">
+                    <i class="fas fa-truck"></i> Delivery
+                </h2>
+                <!-- Accordion 3: Delivery questions -->
+                <article class="accordion mb-5" id="accordiondelivery">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseOneC">
+                                    Is there a delivery service ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOneC" class="collapse show" data-parent="#accordiondelivery">
+                            <div class="card-body">
+                                <p>
+                                    Yes.<br>
+                                    There are two options for delivery service where you can collect at the following
+                                </p>
+                                <ol>
+                                    <li>Your Nearest Post Office (International)</li>
+                                    <li>Direct delivery to your mailing address (for Singapore Only)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseTwoC">
+                                    Is Delivery service charged ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwoC" class="collapse" data-parent="#accordiondelivery">
+                            <div class="card-body">
+                                <p>
+                                    Yes. The delivery is charged at SGD$ 5.00 per payment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-wrap text-left" type="button" data-toggle="collapse" data-target="#collapseThreeC">
+                                    Do you deliver ordered products overseas ?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThreeC" class="collapse" data-parent="#accordiondelivery">
+                            <div class="card-body">
+                                <p>
+                                    Currently the delivery service is only avail to within Singapore only.<br>
+                                    However, you may opt-in for walk-in collection instead.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- Modal (HIDDEN CONTENT 1 > appears when activated modal) -->
+            <section class="modal fade" id="shopnotify1" tabindex="-1" role="dialog">
+                <article class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">
+                            <i class="fas fa-exclamation-triangle fa-2x bg-warning rounded p-2"></i> Notice
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                            <div class="modal-body" id="modalshopbody">
+                                <!-- innerHTML by modal.js-->
+                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">I got it</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <!-- Main Footer -->
+        <footer class="container-fluid bg-secondary text-center font-weight-bold">
+            <section class="row">
+                <i class="fas fa-share col-12 lead mt-4">
+                    <span> share with your friends</span>
+                </i>
+                <article class="mt-2 col-12">
+                    <a class="btn btn-primary btn-outline-dark text-light p-2 rounded" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"><span> Facebook</span></i>
+                    </a>
+                    <a class="btn btn-info btn-outline-dark text-light p-2 rounded" href="https://twitter.com/login">
+                        <i class="fab fa-twitter"><span> Twitter</span></i>
+                    </a>
+                    <a class="btn btn-light btn-outline-dark text-dark p-2 rounded" href="http://plus.google.com">
+                        <i class="fab fa-google-plus-g">
+                        <span class="text-primary"> G</span>
+                        <span class="text-danger">o</span>
+                        <span class="text-warning">o</span>
+                        <span class="text-primary">g</span>
+                        <span class="text-success">l</span>
+                        <span class="text-danger">e+</span>
+                        </i>
+                    </a>
+                    <a class="btn btn-danger btn-outline-dark text-light p-2 rounded" href="https://www.pinterest.com/login/">
+                        <i class="fab fa-pinterest"><span> Pinterest</span></i>
+                    </a>
+                    <a class="btn btn-warning btn-outline-dark text-light p-2 rounded" href="https://www.linkedin.com/uas/login?">
+                        <i class="fab fa-linkedin-in"><span> Linkedin</span></i>
+                    </a>
+                </article>
+                <article class="col-12 mt-5 ml-5">
+                    <section class="row">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-left">
+                            <i class="fas fa-rss-square d-inline"></i>
+                            <h6 class="font-weight-bold d-inline">What's new</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Intel i9</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Nvidia 2080</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Lindow Edge</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">FLAT</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Curved 3D Laptop</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-left">
+                            <i class="fas fa-user-friends d-inline"></i>
+                            <h6 class="font-weight-bold d-inline">Profile Management</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Account Profile</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Track order</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Sync Account</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-left">
+                            <i class="fas fa-user-graduate d-inline"></i>
+                            <h6 class="font-weight-bold d-inline">Education</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Laptops for Student</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Custom OS Maker</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Student benefits</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Licensing student</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-left">
+                            <i class="fas fa-building d-inline"></i>
+                            <h6 class="font-weight-bold d-inline">Company</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1"></a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">About Us</a></li>
+                                <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </article>
+                <article class="col-12 col-sm-12 col-md-8 col-lg-6 mx-auto">
+                    <ul class="nav navbar list-unstyled">
+                        <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1"><i class="fas fa-language fa-1x"> Viewing in: English (UK)</i> |</a></li>
+                        <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">Contact Us |</a></li>
+                        <li><a class="text-light text-decoration-none" href="#" data-toggle="modal" data-target="#shopnotify1">About our Ads |</a></li>
+                    </ul>
+                </article>
+                <figure class="mb-0 col-12">
+                    <img src="favicon.ico" alt="favicon icon"><a class="text-decoration-none text-light" href="#">Jackerton | Latest PCs & Sky-High Discounts &#9400; 2019</a>
+                </figure>
+            </section>
+        </footer>
+        <!-- 
+
+            Bootstrap CDN
+        -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- 
+
+            custom javascript
+            modal.js == For displaying contents of Bootstrap Modal
+        -->
+        <script src="javascript/modal.js"></script>
+
+        <!-- 
+
+            Custom Icons 
+        -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </body>
+</html>
